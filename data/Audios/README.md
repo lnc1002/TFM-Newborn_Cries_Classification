@@ -1,4 +1,4 @@
-After extracting the audio from the videos, all extracted audio files have the extension **.wav** and the original name of the different files has been preserved. These audio files are organised in the same directory system as the videos and consist of **63 audio files**. 
+After extracting the audio from the videos, all extracted audio files have the extension **.wav** and the original name of the different files has been preserved. These audio files are organised in the same directory system as the videos and consist of **63 audio files**:
 *  Unclassified (58 files)
 *  Mild_encephalopathy (1 file)
 *  Severe_encephalopathy (1 file)
