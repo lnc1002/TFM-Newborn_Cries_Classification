@@ -2,3 +2,5 @@
 * **4_Notebook-4_MLP_Multi-class.ipynb**: This notebook shows two implementations of the Multilayer Perceptron (**MLP**) model. The first implementation tests without cross-validation, while the second implementation tests using cross-validation.
 * **5_Notebook-5_SVM_Multi-class.ipynb**: This notebook shows two implementations of the Support Vector Machine (**SVM**) model. The first implementation tests without cross-validation, while the second implementation tests using cross-validation.
 * **6_Notebook-6_LSTM_Multi-class.ipynb**: This notebook shows two implementations of the Long Short-Term Memory (**LSTM**) model. The first implementation tests without cross-validation, while the second implementation tests using cross-validation.
+
+![](../../doc/figures/Multi-class-classification.png) 
