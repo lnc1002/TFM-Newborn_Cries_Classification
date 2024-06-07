@@ -5,5 +5,8 @@
 * **features_lpc_binary.npy**: Features extracted by Linear Predictive Coding (LPC) in binary classification. 
 * **features_mfcc_binary.npy**: Features extracted by Mel Frequency Cepstral Coeﬃcients (MFCC) in binary classification. 
 * **labels_lpc_binary.npy** & **labels_mfcc_binary.npy**: Labels representing the classes or categories to which the audio data belong.
+* **probabilities_with_LSTM.csv**: Probability of crying in each second of the files available in the binary classification using the Long Short-Term Memory (LSTM) model. 
+* **probabilities_with_MLP.csv**: Probability of crying in each second of the files available in the binary classification using the Multilayer Perceptron (MLP) model. 
+* **probabilities_with_SVM.csv**: Probability of crying in each second of the files available in the binary classification using the Support Vector Machine (SVM)  model. 
 
 ![](../../doc/figures/Binary-classification.png) 
