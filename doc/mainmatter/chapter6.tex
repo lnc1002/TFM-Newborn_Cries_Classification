@@ -1,0 +1,36 @@
+% called by main.tex
+%
+\chapter{Conclusions and Outlook}
+\label{ch::chapter6}
+
+\section{Conclusions}
+Firstly, it should be noted that this project has been based on an exhaustive investigation of the state of the art, looking at methods that have been previously developed for applications similar to the ones in this project. This approach allows this research to be seen as a review article. 
+
+The more in-depth discussion of the experiments has been done in \textit{Experiments} section, while the results of these experiments can be observed in \textit{Results} section. Therefore, we can conclude that the combination of different hyperparameters in different models gives good results in newborn cry classification, both quantitatively and qualitatively (table \ref{table:binary-results} and images   \ref{fig:cualitative-results}, \ref{fig:clips0-4}).
+
+
+As discussed throughout the project, early detection of HIE is essential to be able to treat the neonate as quickly as possible and thus significantly improve long-term adverse effects \cite{UpToDateNeonatalEncephalopathy}. For this reason, Deep Learning, and Machine Learning models can be tremendously useful to improve diagnostic accuracy, treatment efficacy, and provide decision support for potential complications in such vulnerable patients.
+
+This project aims to emphasise the real relevance that the use of Deep Learning, and Machine Learning algorithms can have in solving audio analysis problems, especially in the context of child health. Looking at the results obtained, and taking into account that the number of samples is not too large, in particular the number of crying samples, very promising classifications have been achieved. This suggests that such models could be used in the future to detect infant crying in clinical settings and aid in the diagnosis of HIE.
+
+It is also important to note that this project achieves promising results by using data from a typical or representative setting, provided by a hospital maternity ward. This makes it generalisable to other hospitals or clinical settings, strengthening the reliability and usefulness of Deep Learning, and Machine Learning techniques.
+
+
+
+\section{Future work}
+
+Given the timescale of the project and the length of this report, it has been necessary to select those objectives that were achievable within the limits of the project. There were two sets of experiments to be carried out: testing and evaluating different classification models, including \textbf{MLP}, \textbf{SVM} and \textbf{LSTM}, using public multi-class data, and applying these same models to real binary data provided by the HUBU.
+
+Both the first and second groups of experiments have been successfully completed within the theoretical framework of the project and with the data available to date, suggesting that within these working groups there is still room to extend the tasks performed in order to achieve more complete results.
+
+First, the experiments can be further extended by \textbf{testing different hyperparameter configurations}, new models, and architectures. First, we could implement deeper models and analyse the effects of using more layers. We could also use advanced hyperparameter optimisation techniques to improve model performance. Last but not least, we could explore the use of hybrid architectures combining vision and audio models, taking advantage of the results of this project together with those of other projects involving the vision part to obtain a more holistic assessment of the baby's state.
+
+Additionally, the \textbf{process of labelling audio data could be automated} using semi-supervised learning techniques. Implementing these techniques would reduce the manual labelling task, and improve the efficiency of the model training process. This is especially relevant given that the current volume of data is limited, as only one hospital is being worked with. However, if this project could be integrated with a larger number of hospitals in the future, the amount of data collected will increase significantly.
+
+Another potential experiment is to integrate \textbf{real-time data analysis} for early medical alerts. This could be developed through a system that not only classifies baby sounds, but also identifies patterns that may indicate urgent medical conditions, sending alerts to healthcare professionals. As discussed in the project, this line of research follows audio classification, but there are other lines of research that are classifying the image. These lines of research could be extended to also classify, and evaluate biomarkers and perform real-time analysis. 
+
+Another line of future work is to include the possibility of \textbf{learning about audio tones}, not only by determining whether the baby cries or not, but also how the baby cries. To achieve this purpose, different types of crying could be analysed, labelled and classified. This would be useful to differentiate between times when the baby starts or stops crying, and times when the baby cries more intensely. Furthermore, it could be useful to determine the type of the baby's crying, since, although probabilities are currently provided and the intensity of the crying can be observed in relation to the probability, this does not provide an output of whether the crying is weak, strong, consistent, etc.
+
+
+The last group of experiments that could be carried out is the \textbf{analysis of the doctors' comments} seen in the videos provided by the HUBU. The doctors provide guidelines about the baby's condition, such as what reaction they are experiencing to a stimulus or the degree of HIE they present. So another possible future work could be to evaluate and classify these comments to improve the accuracy of the assessment of the baby's condition. This approach would integrate additional qualitative data, and could lead to a more accurate and contextualised classification of infant states.
+

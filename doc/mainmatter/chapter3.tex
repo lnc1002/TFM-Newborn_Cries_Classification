@@ -1,0 +1,61 @@
+% called by main.tex
+%
+\chapter{State of the art}
+\label{ch::chapter3}
+
+\section{Overview }
+
+The relevance of this problem at a global level is reflected in the different articles that exist on this subject. There are many articles that present different models for disease detection and improvement \cite{Kohli2019, Chen2017}, in particular the study \textit{Comparing different supervised machine learning algorithms for disease prediction} by Shahadat Uddin, Arif Khan, et al \cite{Uddin2019}, focuses on the evaluation of different machine learning algorithms to detect diseases with health data. In this study, 48 articles applying different algorithms for single disease prediction were reviewed, concluding that by applying these novel techniques, disease predictions become more accurate and efficient compared to traditional statistical methods.
+
+Literature on the applications of deep learning to audio pattern recognition, specifically to the recognition and classification of baby cries, demonstrates its imperative relevance to medical diagnosis. Progress in certain areas leads directly or indirectly to progress in other areas of interest, to show we have highlighted different aspects considered relevant in the reviewed literature:
+\begin{itemize}
+    \item \textbf{Data acquisition}, \textit{Deep Learning for Infant Cry Recognition} by Yun-Chia Liang et al \cite{Liang2022} tackles the problem of obtaining unbalanced data by exhaustive pre-processing and feature selection.
+    \item \textbf{Data augmentation}, a technique used to address the scarcity of data has been used by numerous studies, specifically in the article \textit{Infant Crying Classification by Using Genetic Algorithm and Artificial Neural Network} by Azadeh Bashiri and Roghaye Hosseinkhani \cite{Bashiri2020}. This study carried out different comparisons in which by modifying the audio data, adding or removing noise, increasing the playback speed or changing the audio pitch, they managed to demonstrate the effectiveness of this technique to improve the robustness of machine learning models. 
+    \item \textbf{Data enhancement}, building on the previous technique, another one that becomes very important is sound enhancement. This result can be achieved by removing noise or interference present in the data. In the study \textit{Deep Learning Assisted Neonatal Cry Classification via Support Vector Machine Models} by Severini et al. \cite{K2021} it is shown how to improve the results obtained from the model by implementing noise removal techniques and simulation of acoustic scenes.
+    \item \textbf{Detection and segmentation}, detecting, and segmenting crying in unlabelled audios can be a significant challenge for researchers. In the study \textit{Classification of Infant Cries with Hypothyroidism Using Multilayer Perceptron Neural Network} by Azlee Zabidi et al. \cite{zabidi2009classification}, manual labelling techniques were used on the data they had available to ensure segmentation accuracy.
+\end{itemize}
+
+\section{Related Work}
+
+Review of the articles on audio classification using deep learning, revealed a multitude of several combinations of techniques that yielded worthwhile results. In this section we present the different techniques that were utilized, and the results they provided. These results are summarised in table \ref{table:paper_overview}, emphasising how the different features used by each model have been obtained, and with which metrics these models have been evaluated. 
+
+Taking into account the articles mentioned in the previous section, this information can be pertinent together with new articles that present the same objective, that is the classification of crying in infants. The studies that have been consulted present the possibility of applying a wide variety of techniques, including supervised learning models such as \textbf{MLP} and \textbf{SVM}, and also deep neural networks such as CNNs and \textbf{LSTMs}. These methodologies have been combined with feature extraction techniques to achieve robust and accurate models.
+
+One compelling study is the article \textit{A Review of Infant Cry Analysis and Classification} by Chunyan Ji et al \cite{Ji2020}. This article outlines recent work on the analysis, and classification of infant cry signals. It also highlights, among others, the relevant results provided by LSTM and SVM classifications. The former, has been able to demonstrate its effectiveness in handling sequential datasets due to its ability to capture long-term dependencies in crying data sequences. The latter, together with a combination of \textbf{MFCC} feature extraction techniques was able to achieve accuracies above 90\% in the classification of different types of cries. 
+
+Finally, other articles such as the one by Silvia Orlandi, Carlos Alberto Reyes Garcia, et al \cite{Orlandi2016} also highlight the use of different models to differentiate cries emitted by full-term infants from those of preterm ones. This study mentions the use of a Radial Basis Function (RBF) kernel for the SVM model. This study highlights that this type of \textit{kernel}, compared to others such as the linear kernel, and the polynomial kernel, offers better results achieving 95.86\% accuracy for the identification of cries related to asphyxia.
+
+
+%\begin{tabularx}{\textwidth}{C C C}
+%\rowcolor{orange!10}
+\begin{table}[!ht]
+    \small
+    \setlength\extrarowheight{2pt} % for a bit of visual "breathing space"
+    \rowcolors {2}{gray!15}{}
+    \begin{tabularx}{\textwidth}{Xp{1.8cm}p{3.3cm}p{1.5cm}p{2.2cm}}
+    \toprule
+        \rowcolor{orange!10}
+        \textbf{Title, Year, Authors} & \textbf{Database}  & \textbf{Models}  & \textbf{Features} & \textbf{Metrics}  \\
+    \midrule  
+        Infant Crying Classification by Using Genetic Algorithm and Artificial Neural Network, 2018, Azadeh Bashiri, Roghaye Hosseinkhan, et al \cite{Bashiri2020} & Baby Chillanto database, 2268 cries & Genetic Algorithm (\textbf{GA}), Artificial Neural Network (\textbf{ANN}) & 304 \textbf{MFCC}, 50 \textbf{LPC} & Accuracy, Sensitivity, Specificity \\ %& 99.9\% accuracy \\
+
+        An Efficient Classification of Neonates Cry Using Extreme Gradient Boosting-Assisted Grouped-Support-Vector Network, 2020, Chuan-Yu Chang, Sweta Bhattacharya, et al \cite{Chang2020} & Collected from hospitals, 1000 cries & Extreme Gradient Boosting, Grouped-Support-Vector Network (\textbf{SVMs}) & 12 Acustic \textbf{MFCC} features & Accuracy, Precision, Recall \\ %& 94.5\% accuracy \\
+
+        A review of infant cry analysis and classification, 2020, Chunyan Ji, Thosini Bamunu Mudiyanselage, Yutong Gao and Yi Pan \cite{ Ji2020} & Different databases & KNN, \textbf{SVM}, GMM, and neural network architectures such as CNN and RNN & \textbf{MFCC}, LPCCs, and LFCCs & Accuracy, Precision, Recall, F1-score \\ %& Good results in general \\ 
+
+        Deep Learning Assisted Neonatal Cry Classification via Support Vector Machine Models, 2021, Ashwini K, P.M. Durai Raj Vincent et al \cite{K2021} & 300 audio records & Support Vector Machine (\textbf{SVM with RBF kernel}) & CNN from spectrogram images & Specificity, Sensitivity, Precision, Accuracy, F1 Score, \textbf{ROC} and \textbf{AUC} \\ %& 88.89\% accuracy with SVM and RBF kernel \\
+        
+        Deep Learning for Infant Cry Recognition, 2022, Yun-Chia Liang, Iven Wijaya, Ming-Tao Yang et al \cite{Liang2022} & 1607 cries from Far Eastern Memorial Hospital & Convolutional Neural Network (CNN), Long Short-Term Memory (\textbf{LSTM}), ANN & MFCC features & Accuracy, Precision, Recall \\ %& 95\% accuracy for CNN and LSTM \\
+
+        Classification of Infant Cries with Hypothyroidism Using Multilayer Perceptron Neural Network, 2009, Azlee Zabidi, Wahidah Mansor, Lee Yoot Khuan, et al \cite{zabidi2009classification} & 25 hypothyroid, 20 normal & Multilayer Perceptron (\textbf{MLP}) & 30 MFCC features & Accuracy, Mean Square Error, Sensitivity, Specificity \\ %& 88.94\% accuracy \\
+
+        Automatic Infant Cry Pattern Classification for a Multiclass Problem, 2016, N.S.A. Wahid, P. Saad, M. Hariharan \cite{Wahid2016} & Baby Chillanto database, 1918 cries & \textbf{MLP}, Radial Basis Function Network (RBFN) & \textbf{MFCC} and LPCC features & Accuracy, Kappa value \\ %& 93.43\% accuracy \\
+
+        Application of Pattern Recognition Techniques to the Classification of Full-Term and Preterm Infant Cry, 2016, Silvia Orlandi, Carlos Alberto Reyes Garcia, et al \cite{Orlandi2016} & 3000 crying units & \textbf{MLP}, \textbf{SVM with RBF kernel}, Random Forest & BioVoice software to extract 22 acoustic parameters & Accuracy, F-measure, \textbf{ROC} and \textbf{AUC} \\ %& 87\% accuracy and 0.94 AUC \\
+ 
+    \bottomrule
+    \end{tabularx}
+    \caption{Overview of studies that classify baby crying}
+    \label{table:paper_overview}
+\end{table}
+\FloatBarrier
