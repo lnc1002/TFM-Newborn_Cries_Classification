@@ -1,0 +1,115 @@
+% --------------------------
+% CREDITS:
+% This template is based and basically an adaptation of UPM_thesis_template_en template:
+% https://www.overleaf.com/latex/templates/upm-thesis-template-en/nzjnspqsxfmm
+% All credits for the template to the author: MAría Blanco (UPM)
+% --------------------------
+
+% --------------------------
+% Document class
+% --------------------------
+\documentclass[
+A4paper,                % paper size A4
+twoside,                % oneside or twoside printing
+%openright,              % doublepage cleaning ends up right side
+chapterprefix=true,     % prefix for chapter marks
+12pt,                   % font size
+headings=normal,        % size of headings
+titlepage=on            % own page for each title page
+]{report} %book
+
+% **************************************************
+% THESIS details
+% **************************************************
+
+%\newcommand{\University}{\protect{URV Faculty School of Engineering (URV)}}
+\newcommand{\UNIVERSITY}{\protect{URV Faculty School of Engineering (URV)}}
+
+\input{thesisDetails}
+
+% **************************************************
+% Settings
+% **************************************************
+
+\input{settings}
+
+% **************************************************
+% Begin document
+% **************************************************
+\begin{document}
+
+% --------------------------
+% Cover and front matter
+% --------------------------
+\frontmatter
+%\pagestyle{empty}				    % no header nor footer
+\input{frontmatter/1_cover}
+\newpage
+
+\input{frontmatter/2_frontpage}
+%\newpage
+
+\pagenumbering{roman}			    % roman page numbering 
+\pagestyle{plain}				    % empty header, just page number in footer
+\input{frontmatter/3_dedication}
+\cleardoublepage
+
+\input{frontmatter/4_acknowledgement_and_funding}   % dedication & acknowledgement (optional)
+\clearpage
+
+\input{frontmatter/5_abstract}  % abstract (in English and Spanish)
+\clearpage
+
+\selectlanguage{english}
+
+\setcounter{tocdepth}{3}		% define depth of toc
+\tableofcontents				% display table of contents
+\clearpage
+
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+\clearpage
+
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+\clearpage
+
+\input{frontmatter/6_acronyms}
+\clearpage
+
+% --------------------------
+% Main matter
+% --------------------------
+\mainmatter
+\pagenumbering{arabic}			% arabic page numbering
+\setcounter{page}{1}			% set page counter
+\pagestyle{fancy} 	            % fancy header and footer
+\parskip=7pt                    % space after each paragraph
+\parindent=0pt                  % suppress indentation of paragraphs
+
+% Chapters
+\include{mainmatter/chapter1}
+\include{mainmatter/chapter2}
+\include{mainmatter/chapter3}
+\include{mainmatter/chapter4}
+\include{mainmatter/chapter5}
+\include{mainmatter/chapter6}
+
+\clearpage
+
+% --------------------------
+% Back matter
+% --------------------------
+\backmatter
+
+\bibliographystyle{cas-model2-names}
+\bibliography{references}
+% \printbibliography[title=Referencias, heading=bibintoc]
+
+\appendix
+\include{mainmatter/x-Annexes}
+
+% **************************************************
+% End of document
+% **************************************************
+\end{document}
