@@ -1,1 +1,5 @@
-
+* **1_Notebook-1_Audio_Extraction.ipynb**: This notebook extracts the audio from each video and stores it in a directory system similar to the one that stores the videos. The final lengths of each file are also displayed to check if the audio has been extracted correctly.
+* **2_Notebook-2_Basic_Operations.ipynb**: Performs the first operations on the audio files.
+* **Mild_encephalopathy_clips.csv** & **Mild_encephalopathy_clips.h5**: Stores the labels of the nine audio clips generated with the different stimuli performed on the newborn in the file contained in the directory Mild_encephalopathy.
+* **Test_data.csv** & **Test_data.h5**: Stores the labels of the files to be used for the double validation, those contained in the directories, No_encephalopathy, Mild_encephalopathy, Moderate_encephalopathy, Severe_encephalopathy.
+* **Unclassified_data.csv** & **Unclassified_data.h5**: Stores the labels of the files that will be used to train and validate the models, these files are those found in the Unclassified directory. 
