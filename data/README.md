@@ -5,7 +5,7 @@ To start with simple experiments that beforehand were expected to obtain good re
 
 **Binary Classification**
 data/Audios
-The directory and [audio file system](https://github.com/lnc1002/TFM-Newborn_Cries_Classification/tree/1c914db698390842ccbd57419a334f1101b66580/data/Audios) that has been created with the [videos](data/Videos) and has the following five directories: 
+The directory and [audio file system](https://github.com/lnc1002/TFM-Newborn_Cries_Classification/tree/1c914db698390842ccbd57419a334f1101b66580/data/Audios) that has been created with the [videos](https://github.com/lnc1002/TFM-Newborn_Cries_Classification/tree/9c8c6263ce4d5207a6a3edc873882c9b1fc098de/data/Videos) and has the following five directories: 
 
   * **Unclassified**, this directory contains a total of 58 videos with different lengths and video formats. In the videos, medical personnel can be observed exposing the neonates to different stimuli. Sometimes the video contains a single stimulus, thus the shorter files, and on other occasions several stimuli which generates longer files.
   * **Severe_encephalopathy**, this directory contains a single video file of a newborn with severe signs of encephalopathy, which means that this baby does not cry at all when exposed to various stimuli. The video lasted 16 minutes and 54 seconds.
