@@ -22,11 +22,15 @@
 
 ## Abstract
 Analysing how a newborn baby reacts to different stimuli is crucial to diagnose possible neurological conditions. Traditionally, these assessments have been performed manually by health professionals, which to some extent leads to subjectivity, and possible misdiagnosis. In addition, such assessments require the immediate availability of a specialist, which in critical situations can delay assessments, putting the baby’s health at risk.
+
 This project uses advanced tools such as **Deep Learning**, and **Machine Learning** to automate, and improve the detection, and **classification of newborn cries** in order to detect possible pathologies or diseases. Artificial Intelligence analyses of newborn videos, provides a consistent, and accurate assessment of newborn responses to stimuli can be achieved, accelerating the diagnosis of a possible disease.
+
 Specifically, this study focuses on the detection of **Hypoxic-Ischaemic Encephalopathy (HIE)** by assessing newborn crying in response to nociceptive stimuli. To achieve this goal, several audio analysis approaches have been applied, with the project focusing on the employing of Machine Learning models, trained on labelled cry data, which have demonstrated high accuracy in the recognition of cry patterns.
 This study explores feature extraction techniques such as Mel-Frequency Cepstral Coefficients (**MFCC**), and Linear Predictive Coding (**LPC**), and has implemented models such as Multilayer Perceptron (**MLP**), Support Vector Machine (**SVM**), and Long Short-Term Memory (**LSTM**). Promising results have been achieved with these models, with accuracies
 of up to 90%.
+
 The above methods not only help to detect HIE, but also open up the possibility of diagnosing other health problems through cry analysis. This research thus highlights the potential of machine learning to improve paediatric diagnosis, and neonatal care.
+
 
 
 **Keywords**: Deep Learning, Machine Learning, Audio analysis, Classification of crying, Newborns, Mel Frequency Cepstral Coefficients (MFCC), Linear predictive coding (LPC), Multilayer Perceptron (MLP), Support Vector Machine (SVM), Long Short-Term Memory
