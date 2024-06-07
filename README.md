@@ -17,7 +17,7 @@
 
 ***************
 * [Report (81 pages)](https://github.com/lnc1002/TFM-Newborn_Cries_Classification/blob/34927bce7afa49e3caa5f2028d2d36f8af93fd00/doc/MT-MBDS-Lucia_Nun%CC%83ez_Calvo.pdf)
-* [Notebooks (10 files)]
+* Notebooks (10 files)
 ***************
 
 ## Abstract
