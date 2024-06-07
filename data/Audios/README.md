@@ -1,4 +1,6 @@
 ![](doc/figures/directory-HUBU.png)
+![](doc/figures/clips.png)
+
 
 The dataset provided by HUBU has **63 video files** organised in different directories: 
 *  Unclassified (58 files)
