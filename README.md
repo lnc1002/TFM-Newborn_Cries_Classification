@@ -16,7 +16,7 @@
 * **Dr. Santiago Marco** 
 
 ***************
-* [Report (81 pages)](https://github.com/lnc1002/TFM-Newborn_Cries_Classification/blob/1806046903a4d8f420dd2c82541413d88430cc4b/doc/MT-MBDS.pdf)
+* [Report (81 pages)](https://github.com/lnc1002/TFM-Newborn_Cries_Classification/blob/34927bce7afa49e3caa5f2028d2d36f8af93fd00/doc/MT-MBDS-Lucia_Nun%CC%83ez_Calvo.pdf)
 * [Notebooks (10 files)]
 ***************
 
